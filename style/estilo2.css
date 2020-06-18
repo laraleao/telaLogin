@@ -1,0 +1,26 @@
+:root {
+  font-family: "Lexend Tera", sans-serif;
+  color: brown;
+}
+
+html {
+  font-family: "Lexend Tera", sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: cornflowerblue;
+}
+
+header img {
+  /* escola */
+  max-width: 200px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+}
+
+div#entrada {
+  width: 12px;
+  height: 12px;
+}

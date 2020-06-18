@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colégio Fictício</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/estilo2.css" />
+    <script src="login.js"></script>
+
+    <body>
+      <header>
+        <h1>Colégio Fictício</h1>
+
+        <img
+          src="style/escola.png"
+          alt="imagem preto e branco de uma fachada de escola"
+        />
+      </header>
+
+      <!-- <form action=""> -->
+      <h3>Olá professores, sejam bem vindos!</h3>
+
+      <!--  colecção de campos/ agrupamento de dados -->
+      <form id="loginEscola" , action="">
+        <fieldset>
+          <legend>
+            <h3>Para acessar o sistema, faça seu login.</h3>
+          </legend>
+
+          <div class="entrada">
+            <!-- display inline -->
+            <label for="login">Login</label>
+            <input type="text" id="user" name="login" />
+          </div>
+
+          <div class="validar">
+            <label for="senha">Senha</label>
+            <input type="text" id="senha" name="senha" />
+          </div>
+        </fieldset>
+      </form>
+
+      <button type="submit" onclick="validarSenhas()">Entrar</button>
+    </body>
+  </head>
+</html>
