@@ -11,20 +11,21 @@ Caso a senha esteja errada deve informar a senha uma mensagem de senha invalida.
 */
 
 function validarSenhas() {
-  var loginJoao = "Joao";
-  var senhaJoao = "1234";
-  var loginCaio = "Caio";
-  var senhaCaio = "senha";
-  var loginBruno = "Bruno";
-  var senhaBruno = "senha1234";
-  var loginInformado = document.getElementById("user").value;
-  var senhaInformada = document.getElementById("senha").value;
+  let loginInformado = document.getElementById("user").value;
+  let senhaInformada = document.getElementById("senha").value;
 
-  if (loginInformado == loginJoao && senhaInformada == senhaJoao) {
+  const loginJoao = ["Joao", "1234"];
+  const loginCaio = ["Caio", "senha"];
+  const loginBruno = ["Bruno", "senha1234"];
+
+  if (loginInformado == loginJoao[0] && senhaInformada == loginJoao[1]) {
     alert("Dados cadastrados");
-  } else if (loginInformado == loginCaio && senhaInformada == senhaCaio) {
+  } else if (loginInformado == loginCaio[0] && senhaInformada == loginCaio[1]) {
     alert("Dados cadastrados");
-  } else if (loginInformado == loginBruno && senhaInformada == senhaBruno) {
+  } else if (
+    loginInformado == loginBruno[0] &&
+    senhaInformada == loginBruno[1]
+  ) {
     alert("Dados cadastrados");
   } else {
     alert("Login Inválido");
